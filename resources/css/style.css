@@ -27,26 +27,86 @@ html {
     margin: 0 auto;
 }
 
+section{
+    padding: 80px 0;
+
+}
+
+.box{
+    padding: 1%;
+}
+
     
 
 /* ---------------------------------------------------------------- */
 /* HEADINGS */
 /* ---------------------------------------------------------------- */
 
-h1{
-    margin: 0;
-    color: #fff;
-    font-size: 240%;
+h1,
+h2,
+h3{
     font-weight: 300;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    
+}
+
+h1{
     word-spacing: 3px;
     margin-bottom: 20px;
     margin-top: 0;
+    color: #fff;
+    font-size: 240%;
+    letter-spacing: 1px;
+}
+
+h2{
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+h2::after{
+    display: block;
+    height: 2px;
+    background-color: #e67e22;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+h3{
+    font-size: 110%;
+    margin-bottom:15px;
+
+}
+/* ---------------------------------------------------------------- */
+/* PARAGRAPHS */
+/* ---------------------------------------------------------------- */
+
+.long-copy{
+    line-height: 145%;
+    width: 70%;
+    margin-left: 15%; /*because we set the line width to 70 the paragraph is no longer centered. so we set the margin left to 15% which is half of the remaining 30% of white space surrounding the paragraph. this will again center our pareagraph in the middle of the page. */
+}
+.box p{
+    font-size: 90%;
+    line-height: 145%;
 }
 
 /* ---------------------------------------------------------------- */
-/* bUTTONS */
+/* ICONS */
+/* ---------------------------------------------------------------- */
+
+.icon-big{
+    font-size: 350%;
+    display: block;
+    color: #e67e22;
+    margin-bottom: 10px;
+}
+
+/* ---------------------------------------------------------------- */
+/* BUTTONS */
 /* ---------------------------------------------------------------- */
 
 .btn:link,
@@ -141,4 +201,25 @@ header{
 .main-nav li a:hover,
 .main-nav li a:active {
     border-bottom: 2px solid #e67e22 ;
+}
+
+/* ---------------------------------------------------------------- */
+/* MEALS */
+/* ---------------------------------------------------------------- */
+.meals-showcase{
+    list-style: none;
+    width: 100%;
+}
+.meals-showcase li{
+    display: block;
+    float: left;
+    width: 25%;
+}
+.meal-photo{
+    width: 100%;
+    margin: 0;
+}
+.meal-photo img{
+    width: 100%;
+    height: auto;
 }
