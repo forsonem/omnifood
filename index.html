@@ -14,27 +14,28 @@
 </head>
 
 <body>
-    <header>
+    <header id="home">
         <nav>
             <div class="row">
-                <img src="resources/img/logo-white.png" alt="Omni food logo" class="logo">
+                <img  src="resources/img/logo-white.png" alt="Omni food logo" class="logo">
+                <a href="#home"><img href="#home" src="resources/img/logo.png" alt="Omni food logo" class="logo-black"></a>
                 <ul class="main-nav">
-                    <li><a href="#section-features">Food delivery</a></li>
-                    <li><a href="#section-steps">How it works</a></li>
-                    <li><a href="#section-cities">Our cites</a></li>
-                    <li><a href="#section-contact">Sign up</a></li>
+                    <li><a href="#features">Food delivery</a></li>
+                    <li><a href="#works">How it works</a></li>
+                    <li><a href="#cities">Our cites</a></li>
+                    <li><a href="#plans">Sign up</a></li>
                 </ul>
             </div>
         </nav>
         <div class="hero-text-box">
             <h1>Goodbye junk food. <br> Hello super healthy meals.</h1>
-            <a class="btn btn-full" href="#">I’m hungry </a>
-            <a class="btn btn-ghost" href="#">Show me more </a>
+            <a class="btn btn-full js--scroll-to-plans" href="#">I’m hungry </a>
+            <a class="btn btn-ghost js--scroll-to-start" href="#">Show me more </a>
         </div>
     </header>
-    <p><a name="section-features"></a></p>
+    
 
-    <section class="section-features">
+    <section class="section-features js--section-features" id="features">
         
         <div class="row">
             <h2>Get food fast &mdash; not fast food</h2>
@@ -68,9 +69,9 @@
             </div>
         </div>
     </section>
-    <p><a name="section-meals"></a></p>
+    
 
-    <section class="section-meals">
+    <section class="section-meals" ">
         
         <ul class="meals-showcase clearfix">
             <li>
@@ -117,9 +118,9 @@
             </li>
         </ul>
     </section>
-    <p><a name="section-steps"></a></p>
+    
 
-    <section class="section-steps">
+    <section class="section-steps" id="works">
         
         <div class="row">
             <h2>How it works &mdash; Simple as 1, 2, 3</h2>
@@ -148,8 +149,8 @@
             </div>
         </div>
     </section>
-    <p><a name="section-cities"></a></p>
-    <section class="cities">
+   
+    <section class="cities" id="cities">
         
         <div class="row">
             <h2>We're currently in these cities</h2>
@@ -221,7 +222,7 @@
             </div>
         </div>
     </section>
-    <p><a name="section-testimonials"></a></p>
+    
 
     <section class="section-testimonials">
         
@@ -252,9 +253,9 @@
             </div>
         </div>
     </section>
-    <p><a name="section-plans"></a></p>
+    
 
-    <section class="section-plans">
+    <section class="section-plans js--section-plans">
         
         <div class="row">
             <h2>Start eating healthy today</h2>
@@ -324,7 +325,7 @@
         </div>
 
     </section>
-    <p><a name="section-contact"></a></p>
+    
     <section class="form">
         
         <div class="row">
@@ -418,6 +419,7 @@
 <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/selectivizr@1.0.3/selectivizr.min.js"></script>
+<script src="vendors/js/jquery.waypoints.min.js"></script>
 <script src="resources/js/script.js"></script>
 </body>
 
